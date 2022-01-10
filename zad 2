@@ -1,1 +1,29 @@
+#include <iostream>
+using namespace std;
 
+int
+nmch (int n[m])
+     int main ()
+{
+  int b;
+  cin >> b;
+  int a[b];
+  for (int i = 0; i < b; i++)
+    {
+      cin >> i;
+    }
+  cout << nmch (a[b]) << endl;
+  return 0;
+}
+
+int
+nmch (int n[m])			//nai malko chetno - nmch
+{
+  int x = n[0];
+  for (int i = 0; i < m; i++)
+    {
+      if (x > i)
+	x = i;
+    }
+  return x;
+}
