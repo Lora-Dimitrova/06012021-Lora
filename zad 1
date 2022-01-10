@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+double sub (double x, double y);
+double izv (double x, double y);
+double umn (double x, double y);
+double del (double x, double y);
+
+int
+main ()
+{
+  double m, n;
+  cin >> m >> n;
+  cout << sub (m, n) << endl;
+  cout << izv (m, n) << endl;
+  cout << umn (m, n) << endl;
+  cout << del (m, n) << endl;
+  return 0;
+}
+
+double
+sub (double x, double y)
+{
+  return x + y;
+}
+
+double
+izv (double x, double y)
+{
+  double a;
+  if (x < y)
+    {
+      return y - x;
+    }
+  else
+    {
+      return x - y;
+    }
+}
+
+double
+umn (double x, double y)
+{
+  return x * y;
+}
+
+double
+del (double x, double y)
+{
+  return x / y;
+}
