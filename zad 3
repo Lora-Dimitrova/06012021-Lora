@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int delitel (int x, int y);
+int kratno (int x, int y);
+
+int
+main ()
+{
+  int a, b;
+  cin >> a >> b;
+  cout << delitel (a, b) << endl;
+  cout << kratno (a, b) << endl;
+  return 0;
+}
+
+int
+delitel (int x, int y)
+{
+  int p = 0;
+  for (int i = 1; i < 100; i++)
+    {
+      if (x % i = 0 && y % i = 0)
+	p = i;
+      break;
+    }
+  return p;
+}
+
+int
+kratno (int x, int y)
+{
+  int p = 0;
+  for (int i = 1; i < 100; i++)
+    {
+      if (i % x = 0 && i % y = 0)
+	p = i;
+      break;
+    }
+  return p;
+}
